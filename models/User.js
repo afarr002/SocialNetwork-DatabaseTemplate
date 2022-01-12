@@ -16,7 +16,7 @@ const userSchema = new Schema(
       unique: true,
     },
     thoughts: [thoughtSchema],
-    friends: [friendCount],
+    friends: [userSchema],
   },
   {
     toJSON: {
