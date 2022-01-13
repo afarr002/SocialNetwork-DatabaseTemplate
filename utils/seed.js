@@ -12,7 +12,7 @@ connection.once("open", async () => {
   await Thought.deleteMany({});
 
   const thoughts = [];
-  const friends = [];
+  const friends = getRandomUsername();
 
   const reactions = getRandomReactions(20);
 
