@@ -41,19 +41,11 @@ module.exports = {
               message: `Oops!
     No user found!`,
             })
-          : Thought.findOneAndUpdate(
-              {
-                users: req.params.userId,
+          : Thought.deleteMany({
+              id: {
+                $in: user.thoughts,
               },
-              {
-                $pull: {
-                  users: req.params.userId,
-                },
-              },
-              {
-                new: true,
-              }
-            )
+            })
       )
       .then((thoughts) =>
         !thoughts
