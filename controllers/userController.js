@@ -47,13 +47,7 @@ module.exports = {
               },
             })
       )
-      .then((thoughts) =>
-        !thoughts
-          ? res.status(404).json({
-              message: `User deleted, but no thoughts found!`,
-            })
-          : res.json({ messgae: `User successfully deleted` })
-      )
+      .then(() => res.json({ messgae: `User successfully deleted` }))
       .catch((err) => {
         console.log(err);
         res.status(500).json(err);
