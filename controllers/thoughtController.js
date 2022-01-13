@@ -49,6 +49,6 @@ module.exports = {
           message: `Thoughts and reactions deleted!`,
         })
       )
-      .catch((err) => res.s);
+      .catch((err) => res.status(500).json(err));
   },
 };
