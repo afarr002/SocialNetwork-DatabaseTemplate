@@ -68,9 +68,9 @@ const usernames = [
 //   "Quisque id just",
 // ];
 
-const getRandomArrayItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
+// const getRandomArrayItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
-const getRandomUsername = () => `${getRandomArrayItem(usernames)}`;
+// const getRandomUsername = () => `${getRandomArrayItem(usernames)}`;
 
 // const getRandomReactions = (int) => {
 //   const results = [];
@@ -96,7 +96,7 @@ const getRandomUsername = () => `${getRandomArrayItem(usernames)}`;
 
 module.exports = {
   usernames,
-  getRandomUsername,
+  // getRandomUsername,
   // getRandomThoughts,
   // getRandomReactions,
 };

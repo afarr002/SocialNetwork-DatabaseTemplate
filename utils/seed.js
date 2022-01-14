@@ -2,7 +2,7 @@ const connection = require("../config/connection");
 const { User, Thought } = require("../models");
 const {
   usernames,
-  getRandomUsername,
+  // getRandomUsername,
   // getRandomReactions,
   // getRandomThoughts,
 } = require("./data");
