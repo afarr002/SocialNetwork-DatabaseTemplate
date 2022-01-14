@@ -32,7 +32,7 @@ connection.once("open", async () => {
 
   await User.collection.insertMany(userData);
 
-  console.table(Users);
+  console.table(User);
 
   console.info("Seeding complete! 🌱");
   process.exit(0);
