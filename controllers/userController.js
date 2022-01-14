@@ -34,7 +34,7 @@ module.exports = {
   },
 
   deleteUser(req, res) {
-    User.findOneAndRemove({ _id: res.params.userId })
+    User.findOneAndRemove({ _id: req.params.userId })
       .then((user) =>
         !user
           ? res.status(404).json({
