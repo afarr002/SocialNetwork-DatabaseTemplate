@@ -8,7 +8,7 @@ const userSchema = new Schema(
       unique: true,
       required: true,
       trim: true,
-      max_length: 25,
+      max: 25,
       validate: /^[a-zA-Z0-9_-]{1,25}$/,
     },
     email: {
