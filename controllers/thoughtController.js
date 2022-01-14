@@ -89,18 +89,13 @@ module.exports = {
       },
       { runValidators: true, new: true }
     )
-      .then((reaction) =>
-        !reaction
-          ? res.status(404).json({ messgae: `No reactin found with that ID` })
-          : res.json({ message: `Reaction deleted!` })
-      )
-      .then((thought) =>
-        !thought
-          ? res.status(404).json({
-              message: `Very curious indeed.
+    .then((thought) =>
+      !thought
+        ? res.status(404).json({
+            message: `Very curious indeed.
     No thoughts found with that ID.`,
-            })
-          : res.json(thought)
-      );
+          })
+        : res.json(thought)
+    );
   },
 };
